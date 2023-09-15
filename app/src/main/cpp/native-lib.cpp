@@ -16,7 +16,7 @@ extern "C"
 JNIEXPORT void JNICALL
 Java_com_example_channelwithc_MainActivity_HELLO(JNIEnv *env, jobject thiz) {
     jclass clazz = env -> FindClass("com/example/channelwithc/JUtils");
-    jmethodID methodId = env->GetMethodID(clazz, "start", "()V");
+    jmethodID methodId = env->GetMethodID(clazz, "jni_start", "()V");
     jmethodID method_construct = env->GetMethodID(clazz,"<init>","()V");
     jobject jnutils = env->NewObject(clazz,method_construct);
     if (methodId == nullptr) {

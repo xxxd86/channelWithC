@@ -61,7 +61,7 @@ class JUtils {
      * 实例Loader
      */
     @RequiresApi(Build.VERSION_CODES.S)
-    private fun start() {
+    private fun jni_start() {
         val A = A();
         //获得无参构造函数,通过有参
         object_Loader_Class_method(A,"start")
