@@ -1,14 +1,16 @@
 package com.example.channelwithc
 
 import android.os.Build
-import android.util.Log
 import androidx.annotation.RequiresApi
 import com.example.channelwithc.JNIUtils.A
-import java.util.Date
-import java.util.Objects
-import kotlin.jvm.internal.Reflection
+import com.example.channelwithc.JNIUtils.JUtils_A
 
-class JUtils {
+class JUtils : JUtils_A {
+    override fun sta() {
+        super.sta()
+
+    }
+    external fun stringFromJNI(): String
     /**
      * 获得source root
      */
